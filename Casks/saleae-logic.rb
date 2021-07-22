@@ -1,6 +1,6 @@
 cask "saleae-logic" do
-  version "2.3.26"
-  sha256 "4014c00aded81af96cca966e5818bf766993445b4770e17548bad87e314d45a2"
+  version "2.3.31"
+  sha256 "48a2a330034d19d731fdcde544d151aaaa655d988add00147d931767925f2935"
 
   url "https://downloads.saleae.com/logic#{version.major}/Logic-macOS-#{version}-master.zip"
   name "Saleae Logic2"
@@ -12,6 +12,7 @@ cask "saleae-logic" do
     strategy :header_match
   end
 
+  auto_updates true
   depends_on macos: ">= :mojave"
 
   app "Logic#{version.major}.app"
